@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var car_1 = require("./car");
+var auto = new car_1.Car("Peugeot", "3008", 2022);
+var auto2 = new car_1.Car("Toyota", "Corolla", 2024);
+var auto3 = new car_1.Car("Volkswagen", "Taos", 2025);
+console.log(auto);
+console.log(auto.acelerar(80));
+console.log(auto.frenar());
+console.log("----------------------");
+console.log(auto2);
+console.log(auto2.acelerar(110));
+console.log(auto2.frenar());
+console.log("----------------------");
+console.log(auto3);
+console.log(auto3.acelerar(160));
+console.log(auto3.frenar());
