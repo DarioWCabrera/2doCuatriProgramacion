@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var heladera_1 = require("./heladera");
+var smartHeladera_1 = require("./smartHeladera");
+var moduloWifi_1 = require("./moduloWifi");
+var primerHeladera = new heladera_1.Heladera("Gafa", "HDR400", true, 20);
+var moduloWifi = new moduloWifi_1.ModuloWifi(3000, 5);
+var primerHeladeraSmart = new smartHeladera_1.SmartHeladera("Whirlpool", "LAM10", true, 15, moduloWifi, false);
+primerHeladeraSmart.encender();
+primerHeladeraSmart.cambiarTemperatura(18);
+primerHeladeraSmart.conectarInternet();
+primerHeladeraSmart.mostrarInfo();
