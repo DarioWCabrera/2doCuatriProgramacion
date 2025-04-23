@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var ejemploInterfaz_1 = require("./ejemploInterfaz");
+var ejemploInterfaz_2 = require("./ejemploInterfaz");
+var nuevatarjeta = new ejemploInterfaz_2.TarjetaDeCredito(4548720024603223);
+var billetera = new ejemploInterfaz_1.MercadoPago("Dario Cabrera99");
+var transfer = new ejemploInterfaz_1.Transferencia(62302524, "Dario Cabrera", 50000);
+nuevatarjeta.procesarPago();
+nuevatarjeta.cancelarPago();
+nuevatarjeta.generarRecibo();
+console.log("--------------------");
+billetera.procesarPago();
+billetera.cancelarPago();
+billetera.generarRecibo();
+console.log("--------------------");
+transfer.procesarPago();
+transfer.cancelarPago();
+transfer.generarRecibo();
