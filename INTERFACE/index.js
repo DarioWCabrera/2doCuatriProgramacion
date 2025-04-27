@@ -1,10 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var ejemploInterfaz_1 = require("./ejemploInterfaz");
-var ejemploInterfaz_2 = require("./ejemploInterfaz");
-var nuevatarjeta = new ejemploInterfaz_2.TarjetaDeCredito(4548720024603223);
-var billetera = new ejemploInterfaz_1.MercadoPago("Dario Cabrera99");
-var transfer = new ejemploInterfaz_1.Transferencia(62302524, "Dario Cabrera", 50000);
+var tarjeta_1 = require("./tarjeta");
+var mercado_1 = require("./mercado");
+var transferencia_1 = require("./transferencia");
+var nuevatarjeta = new tarjeta_1.TarjetaDeCredito(4548720024603223);
+var billetera = new mercado_1.MercadoPago("Dario Cabrera99");
+var transfer = new transferencia_1.Transferencia(62302524, "Dario Cabrera", 50000);
 nuevatarjeta.procesarPago();
 nuevatarjeta.cancelarPago();
 nuevatarjeta.generarRecibo();

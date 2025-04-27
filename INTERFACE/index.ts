@@ -1,5 +1,8 @@
-import { IPago, MercadoPago, Transferencia } from "./ejemploInterfaz";
-import { TarjetaDeCredito } from "./ejemploInterfaz";
+
+import { IPago } from "./interfaz";
+import { TarjetaDeCredito } from "./tarjeta";
+import { MercadoPago } from "./mercado";
+import { Transferencia } from "./transferencia";
 
 let nuevatarjeta = new TarjetaDeCredito(4548720024603223);
 
