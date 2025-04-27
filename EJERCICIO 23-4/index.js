@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var perro_1 = require("./perro");
+var gato_1 = require("./gato");
+var nuevoPerro = new perro_1.Perro("Bart");
+var nuevoGato = new gato_1.Gato("Asrrael");
+console.log(nuevoGato.getNombre());
+nuevoGato.moverse();
+nuevoGato.emitirSonido();
+nuevoGato.tipoDeDieta();
+console.log("----------------------------------------");
+console.log(nuevoPerro.getNombre());
+nuevoPerro.moverse();
+nuevoPerro.emitirSonido();
+nuevoPerro.tipoDeDieta();
