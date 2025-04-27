@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var profesor_1 = require("./profesor");
+var estudiante_1 = require("./estudiante");
+var curso_1 = require("./curso");
+var profe1 = new profesor_1.Profesor("Lulian Barosela", 45, "Pintura");
+var profe2 = new profesor_1.Profesor("Laura Martinez", 40, "Dibujo");
+var estudiante1 = new estudiante_1.Estudiante("Damian Fernandez", 22, "Literatura");
+var estudiante2 = new estudiante_1.Estudiante("Carla Gonzalez", 20, "Arte");
+var estudiante3 = new estudiante_1.Estudiante("Lucia Echeverri", 21, "Dibujo");
+var cursoPintura = new curso_1.Curso("Técnicas de Pintura", profe2);
+cursoPintura.agregarParticipante(estudiante2);
+cursoPintura.agregarParticipante(estudiante3);
+var personas = [profe2, estudiante3, estudiante2];
+console.log("--- Presentaciones ---");
+personas.forEach(function (p) { return console.log(p.presentarse()); });
+console.log("\n--- Información del Curso ---");
+console.log(cursoPintura.mostrarInfo());
