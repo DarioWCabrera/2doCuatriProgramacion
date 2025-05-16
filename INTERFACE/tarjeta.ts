@@ -11,6 +11,7 @@ export class TarjetaDeCredito implements IPago {
       this.entidad = "Visa";
       this.numeroDeTarjeta = pNumeroDeTarjeta;
     }
+
   
     procesarPago(): void {
       console.log(`La tarjeta numero ${this.numeroDeTarjeta} pertenece a la entidad ${this.entidad} y su compra se puede pagar hasta en ${this.cuotas} cuotas  `)

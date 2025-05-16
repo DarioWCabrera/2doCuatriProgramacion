@@ -13,7 +13,20 @@ export class Transferencia implements IPago {
       this.titular = pTitular;
       this.monto = pMonto;
     }
-  
+    
+    public getEntidad(): string{
+      return this.entidad
+    }
+    public setNumeroCuenta(pNumeroCuenta: number): void {
+      this.numeroCuenta = pNumeroCuenta;
+    }
+    public getNumeroCuenta(): number{
+      return this.numeroCuenta;
+    }
+    public setTitular(pTitular: string): void{
+      this.titular = pTitular;
+    }
+
     procesarPago(): void {
       console.log(`El pago se realizara desde la cuenta ${this.numeroCuenta}, perteneciente al ${this.entidad}, a nombre de ${this.titular}, por la cantidad de $ ${this.monto} pesos.`)
     }
